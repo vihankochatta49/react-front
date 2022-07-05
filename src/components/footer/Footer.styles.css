@@ -1,13 +1,14 @@
 .footer-container {
     background-color: #242424;
-    padding: 4rem 0 2rem 0;
+ 
     display: flex;
-    flex-direction: column;
+  
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
   }
   
-  .footer-subscription {
+  /* .footer-subscription {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,9 +18,9 @@
     margin-bottom: 24px;
     padding: 24px;
     color: #fff;
-  }
+  } */
   
-  .footer-subscription > p {
+  /* .footer-subscription > p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
@@ -27,9 +28,9 @@
   .footer-subscription-heading {
     margin-bottom: 24px;
     font-size: 24px;
-  }
+  } */
   
-  .footer-subscription-text {
+  /* .footer-subscription-text {
     margin-bottom: 24px;
     font-size: 20px;
   }
@@ -43,9 +44,9 @@
     font-size: 18px;
     margin-bottom: 16px;
     border: 1px solid #fff;
-  }
+  } */
   
-  .footer-links {
+  /* .footer-links {
     width: 100%;
     max-width: 1000px;
     display: flex;
@@ -92,7 +93,7 @@
   .footer-input::placeholder {
     color: #b1b1b1;
   }
-  
+   */
   /* Social Icons */
   .social-icon-link {
     color: #fff;
@@ -100,13 +101,15 @@
   }
   
   .social-media {
+    height: 100px;
     max-width: 1000px;
     width: 100%;
   }
-  
+ 
   .social-media-wrap {
     display: flex;
-    justify-content: space-between;
+   
+    justify-content: center;
     align-items: center;
     width: 90%;
     max-width: 1000px;
@@ -114,12 +117,16 @@
   }
   
   .social-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 240px;
-  }
   
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+  }
+ 
+
+/* 
   .social-logo {
     color: #fff;
     justify-self: start;
@@ -130,10 +137,11 @@
     display: flex;
     align-items: center;
     margin-bottom: 16px;
-  }
+  } */
   
   .website-rights {
     color: #fff;
+    position: static;
     margin-bottom: 16px;
   }
   
