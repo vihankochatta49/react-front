@@ -55,10 +55,13 @@
 }
 
 .nav-item {
+ 
   height: 80px;
 }
 
 .nav-links {
+  font-family: 'Tajawal',sans-serif;
+  font-weight: 500;
   color: #fff;
   display: flex;
   align-items: center;
@@ -77,6 +80,7 @@
 }
 
 .nav-links-mobile {
+
   display: none;
 }
 
@@ -143,8 +147,13 @@
     color: #fff;
     font-size: 2rem;
   }
-
+Button{
+  font-family: 'Tajawal',sans-serif;
+  font-weight: 500;
+}
   .nav-links-mobile {
+    font-family: 'Tajawal',sans-serif;
+    font-weight: 500;
     display: block;
     text-align: center;
     margin: 2rem auto;

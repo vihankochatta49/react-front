@@ -28,6 +28,7 @@ function Navbar() {
     return (
         <>
             <nav className='navbar'>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap"></link>
                 <div className='navbar-container'>
                     <Link to="/" className='navbar-logo' onClick={closeMobileMenu}>
                     <span class='icon'></span>  
@@ -43,13 +44,13 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/services" className="nav-links" onClick={closeMobileMenu}>
+                            <Link to="/whyca" className="nav-links" onClick={closeMobileMenu}>
                                 Why CA?
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link 
-                                to="/products" 
+                                to="/impetus" 
                                 className="nav-links" 
                                 onClick={closeMobileMenu}
                             >
@@ -66,7 +67,8 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>REGISTER</Button>}
+                    {button && <Button className="button" 
+                    buttonStyle='btn--outline'>REGISTER</Button>}
                 </div>
             </nav>
         </>

@@ -1,21 +1,16 @@
 import React from 'react';
 import '../../App.css';
-import Navbar from '../nav-bar/Navbar';
-import Cards from '../card-item/Cards';
-import Footer from '../footer/Footer';
+
 import HeroSection from '../hero-section/HeroSection';
+import AboutUs from '../about-us/AboutUs';
 
 function Home () {
   
     return (
         
         <>
-           
-           
             <HeroSection />
-        
-            <Footer />
-           
+            <AboutUs /> 
         </>
     )
 }
