@@ -1,125 +1,264 @@
-.cards {
-    background-color: black;
-    padding: 4rem;
-    background: #fff;
-  }
-  
-  h1 {
-    font-family: 'Tajawal', sans-serif;
-    color: black;
-    text-align: center;
-  }
-  
-  .cards__container {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    max-width: 1120px;
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .cards__wrapper {
+.whyca {
+  padding: 2rem;
+  background: white;
+}
 
-    position: relative;
-    margin: 50px 0 45px;
-  }
+#card:hover {
+   box-shadow: 5px 6px 6px 2px #e9ecef; 
+  color: black;
+  width: 90%;
+  background: lightgrey;
+  margin: 10px;
+  padding: 10;
+}
+
+#card {
+  transition: all 0.2s ease;
+  padding: 10;
+  width: 90%;
+  margin: 10px;
+}
+
+#title {
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  font-size: 25px;
+}
+
+/* #title:hover {
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+  font-size: 25px;
+} */
+#whyca{
+  flex-direction: row;
+  flex-flow: row;
+}
+
+
+#text1 {
+  margin: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: 200;
+}
+
+#respons{
+  margin-top: 50x;
+  letter-spacing: 0.3cm;
+  position: relative;
+  max-width: 700px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+.respons{
+  padding: 4rem;
+  background: black;
+}
+/* #text1:hover {
+  margin: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  color: black;
+  font-weight: 200;
+} */
+
+#group {
+  max-width: 1120px;
+  margin: 0 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  align-self: center;
+  align-content: center;
+  gap:0
+
+}
+#img{
+  margin-left: 10;
+  align-self: center;
+}
+.hr-lines {
+  letter-spacing: 0.3cm;
+  position: relative;
+  max-width: 700px;
+  color: black;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  display: flex;
+  /* align-items: center; */
+  color: black;
+  line-height: 1cm;
   
+  margin-bottom: 50px;
+
+}
+
+p{
+  line-height: 1cm;
+  font-size: 20px;
+  font-weight: 100;
+}
+/* .hr-lines:before {
+  content: " ";
+  height: 2px;
+  width: 170px;
+  background: grey;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+} */
+
+/* .hr-lines:after {
+  content: " ";
+  height: 2px;
+  width: 170px;
+  background: grey;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+} */
+
+
+
+
+.cards__container {
+  background: black;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+   max-width: 1120px;
+  width: 100%; 
+  margin: 0 auto;
+}
+
+.cards__wrapper {
+  align-self: center;
+  margin: 50px 0 50px;
+}
+.cards__items {
+  margin-bottom: 24px;
+}
+.cards__item:hover {
+
+  background: lightgrey;
+  flex-flow: column;
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+ 
+}
+
+
+.cards__item {
+  padding: 15px;
+  flex-flow: column;
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+ 
+}
+
+
+
+.cards__item__pic-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 67%;
+ 
+}
+
+.fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
+}
+
+.cards__item__pic-wrap::after {
+  content: attr(data-category);
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  padding: 6px 8px;
+  max-width: calc((100%) - 60px);
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #1f98f4;
+  box-sizing: border-box;
+}
+li{
+  -webkit-transition: background 2s; /* For Safari 3.0 to 6.0 */
+  transition: background 1s; 
+  /* padding: 10; */
+  color: white;
+}
+li:hover{
+  color: black;
+}
+
+
+.cards__item__img {
+  object-fit: scale-down;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 200;
+  max-width: 100%;
+  height: 200;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+
+
+.cards__item__title {
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+  padding: 20px 0 30px;
+} 
+
+.cards__item__text {
+  text-align: left;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 24px;
+} 
+
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   .cards__items {
-    flex-flow: row;
-    margin-bottom: 24px;
+    display: flex;
   }
-  
+}
+
+@media only screen and (max-width: 1024px) {
   .cards__item {
-    display: flex;
-    flex: 1;
-    margin: 0 ;
-    border-radius: 0;
+    padding: 10px;
+    margin-bottom: 2rem;
   }
-  
-  .cards__item__link {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    border-radius: 0;
-    overflow: hidden;
-    text-decoration: none;
-  }
-  
-  /* .cards__item__pic-wrap {
-    position: relative;
-    width: 100%;
-    padding-top: 67%;
-    overflow: hidden;
-  } */
-  
-  .fade-img {
-    animation-name: fade-img;
-    animation-duration: 2s;
-  }
-  
-  /* .cards__item__pic-wrap::after {
-    content: attr(data-category);
-    position: absolute;
-    bottom: 0;
-    margin-left: 10px;
-    padding: 6px 8px;
-    max-width: calc((100%) - 60px);
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    background-color: #1f98f4;
-    box-sizing: border-box;
-  } */
-  
-  .cards__item__img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    transition: all 0.2s linear;
-  }
-  
-  .cards__item__img:hover {
-    transform: scale(1.1);
-  }
-  
-  .cards__item__info {
-    padding: 20px 30px 30px;
-  }
-  
-  .cards__item__text {
-    font-family: 'Josefin Sans', sans-serif;
-    color: black;
-    text-align: center;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  
-  @media only screen and (min-width: 1200px) {
-    .content__blog__container {
-      width: 84%;
-    }
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    .cards__items {
-      display: flex;
-    }
-  }
-  
-  @media only screen and (max-width: 1024px) {
-    .cards__item {
-      margin-bottom: 2rem;
-    }
-  }
+}

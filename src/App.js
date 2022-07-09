@@ -13,9 +13,11 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
     <>
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400&display=swap"></link>
       <Router>
       <Navbar />
         <Routes>
+        
           <Route exact path="/" element={<Home />}/>
           <Route exact path="/impetus" element={<Impetus />}/>
           <Route exact path="/whyca" element={<WhyCa/>}/>
