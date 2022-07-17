@@ -9,16 +9,14 @@ video {
 .hero-container {
   
   background-image: url('https://st3.depositphotos.com/1071909/19574/i/600/depositphotos_195746314-stock-photo-brand-ambassador-professional.jpg'); 
-
-
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-
-  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
+  align-items: flex-start;
   object-fit: contain;
 }
 @keyframes example {
